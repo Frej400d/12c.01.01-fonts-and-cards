@@ -12,7 +12,7 @@
   --color-light: rgb(194, 194, 194);
   --color-lighter: rgb(255, 255, 255);
   /* you could add an accent color for CTAs and anchor tags ;-) */
-  --font-display: 'Berkshire Swash', cursive;
+  --font-display: 'Six Caps', sans-serif;
   --font-paragraph: 'Open Sans', sans-serif;
 }
 
@@ -23,7 +23,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
 
 }
 
