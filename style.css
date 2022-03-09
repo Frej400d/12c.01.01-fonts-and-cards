@@ -7,10 +7,13 @@
 
 /* Color Properties */
 :root {
-  --color-darker: rgb(48, 48, 48);
-  --color-dark: rgb(64, 64, 64);
-  --color-light: rgb(194, 194, 194);
-  --color-lighter: rgb(255, 255, 255);
+  --color-darker: #180a19;
+  --color-dark: #873e67;
+  --color-light: #f1dfe2;
+  --color-lighter: #fff;
+  --color-cta: #5bd57f;
+  --color-link: #5e37ff;
+  --color-remove-cta: #e85881;
   /* you could add an accent color for CTAs and anchor tags ;-) */
   --font-display: "Forum", cursive;
   --font-paragraph: "Work Sans", sans-serif;
@@ -32,7 +35,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 h3 {
@@ -67,6 +70,10 @@ p.card_title {
   text-align: center;
 }
 
+.card_mail a {
+  color: var(--color-link);
+}
+
 #info p {
   margin-bottom: 2rem;
 }
@@ -80,8 +87,8 @@ button {
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-darker);
-  color: var(--color-lighter);
+  background-color: var(--color-cta);
+  color: var(--color-darker);
   font-family: var(--font-paragraph);
   font-weight: 600;
 }
@@ -159,6 +166,10 @@ header {
   background-color: var(--color-light);
 }
 
+#intro button {
+  background-color: var(--color-cta);
+}
+
 .intro_text {
   width: 40vw;
   min-width: 450px;
@@ -180,6 +191,7 @@ header {
 .card {
   width: 275px;
   margin-top: 2rem;
+  background-image: linear-gradient(to bottom right, #fff5f5, #f8dee3);
   background-color: #f1dfe2;
   box-shadow: 10px 10px 5px rgb(212, 205, 212);
   padding: 1rem;
@@ -215,6 +227,10 @@ img.card_image {
   background-color: var(--color-light);
 }
 
+#info h2 {
+  font-size: 2.5rem;
+}
+
 .info_text {
   width: 60vw;
   min-width: 300px;
@@ -225,7 +241,13 @@ img.card_image {
   min-height: 80vh;
   padding-left: 2rem;
   align-items: center;
+  text-align: center;
   justify-content: center;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
 }
 
 .buttons {
@@ -237,9 +259,22 @@ img.card_image {
 
 .buttons input {
   margin: auto;
-  padding: 0.2rem 1rem 0.2rem 1rem;
-  display: flex;
-  align-self: baseline;
+  padding: 1rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: var(--font-paragraph);
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+}
+
+.card_button_positive {
+  background-color: #7edd9a;
+}
+
+.card_button_negative {
+  background-color: #f0799b;
 }
 
 /* Footer */
