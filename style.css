@@ -122,6 +122,8 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 2rem;
 }
 
 /* Header */
@@ -288,8 +290,21 @@ footer {
   color: var(--color-lighter);
 }
 
+footer h3 {
+  color: var(--color-light);
+  font-family: var(--font-paragraph);
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+footer h2 {
+  color: var(--color-light);
+}
+
 footer a {
   color: var(--color-light);
+  font-family: var(--font-paragraph);
+  line-height: 1.5rem;
 }
 
 footer section {
@@ -301,5 +316,5 @@ footer section {
 }
 
 footer section div {
-  margin: 0px 1rem 1rem 1rem;
+  margin: 0px 1rem 1rem 5rem;
 }
