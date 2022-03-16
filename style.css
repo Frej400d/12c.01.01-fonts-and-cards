@@ -198,8 +198,7 @@ header {
 }
 /*extra*/
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   width: 275px;
   margin-top: 2rem;
   background-image: linear-gradient(to bottom right, #fff5f5, #f8dee3);
@@ -224,7 +223,7 @@ img.card_image {
   margin-top: 1.5rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 4rem;
-  justify-items: cemter;
+  justify-items: center;
   margin-left: 2rem;
   margin-right: 2rem;
 }
