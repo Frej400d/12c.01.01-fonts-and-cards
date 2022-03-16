@@ -198,6 +198,7 @@ header {
 }
 /*extra*/
 .card {
+  display: grid;
   width: 275px;
   margin-top: 2rem;
   background-image: linear-gradient(to bottom right, #fff5f5, #f8dee3);
